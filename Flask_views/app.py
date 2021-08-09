@@ -117,8 +117,8 @@ def add_owner():
         owner = Owner(name, puppyId)
 
         # modify the puppy
-        pup = Puppy.query.filter_by(id=puppyId)
-        pup.owner = name
+        # pup = Puppy.query.filter_by(id=puppyId)
+        # pup.owner = name
 
         db.session.add(owner)
         db.session.commit()
